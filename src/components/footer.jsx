@@ -1,9 +1,8 @@
 import React from 'react';
-
 const Footer = () => {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 bg-black text-white py-3 px-6 z-50">
-      <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-6 text-sm">
+    <footer className="fixed bottom-0 left-0 right-0 bg-black text-white py-1.5 px-3 sm:py-2 sm:px-4 z-50">
+      <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm">
         <div className="flex items-center gap-2">
           <span className="text-gray-400">Name:</span>
           <span className="text-white">Aaron Samuel M</span>
@@ -20,5 +19,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
