@@ -64,20 +64,20 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="min-h-auto ">
+    <div className="min-h-auto pb-16">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl mb-4 shadow-lg">
             <Mail className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Get In Touch
           </h1>
           <p className="text-lg text-white max-w-2xl mx-auto">
             Have a question or want to work together? Feel free to reach out. I'll get back to you as soon as possible.
           </p>
         </div>
-        <div className="border-4 bg-black rounded-3xl shadow-2xl p-8 sm:p-12">
+        <div className="border-4 backdrop-blur-lg rounded-3xl shadow-2xl p-8 sm:p-12">
           <div className="space-y-6">
             <div>
               <label htmlFor="name" className="flex items-center text-sm font-semibold text-white mb-2">
