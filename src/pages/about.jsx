@@ -22,7 +22,8 @@ const About = () => {
   ];
   return (
     <>
-      <div style={{ paddingTop:"3vh",overflow: "hidden" }} className="p-10 mt-10">
+    
+      <div style={{ paddingTop:"3vh",overflow: "hidden" }} className=" mt-10">
         <StackedCardsInteraction
           cards={cards}
           spreadDistance={300}
