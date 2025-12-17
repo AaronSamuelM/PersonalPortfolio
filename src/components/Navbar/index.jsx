@@ -13,15 +13,11 @@ import {
   SlidingNavLink,
   CloseButton,
 } from "./navbarElements";
-
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
   const toggleMenu = () => setIsOpen((s) => !s);
   const closeMenu = () => setIsOpen(false);
-
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
     if (el) {
@@ -29,7 +25,6 @@ const Navbar = () => {
     }
     closeMenu();
   };
-
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 8);
     handler();
@@ -69,5 +64,4 @@ const Navbar = () => {
     </>
   );
 };
-
 export default Navbar;
