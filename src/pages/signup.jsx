@@ -21,6 +21,14 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!formData.name.trim() || !formData.email.trim() || !formData.organization.trim() || !formData.message.trim()) {
+      setStatus({
+        type: 'error',
+        message: 'Please fill in all fields with valid content.'
+      });
+      return;
+    }
+    
     setIsSubmitting(true);
     setStatus({ type: '', message: '' });
 
@@ -114,12 +122,13 @@ const ContactForm = () => {
             <div>
               <label htmlFor="organization" className="flex items-center text-sm font-semibold text-white mb-2">
                 <Building2 className="w-4 h-4 mr-2 text-blue-600" />
-                Your Organization
+                Your Organization *
               </label>
               <input
                 type="text"
                 id="organization"
                 name="organization"
+                required
                 value={formData.organization}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors duration-200 text-white"
